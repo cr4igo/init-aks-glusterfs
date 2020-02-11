@@ -11,3 +11,5 @@ modprobe dm_thin_pool
 
 apt-get update
 apt-get install -y glusterfs-fuse
+
+df -h
