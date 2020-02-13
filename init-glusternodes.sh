@@ -4,6 +4,8 @@ modprobe dm_snapshot
 modprobe dm_mirror
 modprobe dm_thin_pool
 modprobe fuse
+# required for ceph, see https://rook.io/docs/rook/v1.2/k8s-pre-reqs.html
+modprobe rbd
 
 apt-get update -y
 apt-get install software-properties-common -y
@@ -12,4 +14,5 @@ apt-get update -y
 apt-get install -y glusterfs-fuse attr openssh-server vim wget
 apt-get install -y glusterfs-client
 
-df -h
+# required for ceph, see https://rook.io/docs/rook/v1.2/k8s-pre-reqs.html
+apt-get install -y lvm2
