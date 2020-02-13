@@ -10,10 +10,8 @@ modprobe dm_mirror
 modprobe dm_thin_pool
 modprobe fuse
 
-apt-get update -y
-apt-get install software-properties-common -y
-add-apt-repository ppa:gluster/glusterfs-7
-apt-get update -y
-apt-get install -y glusterfs-fuse attr openssh-server vim wget
-
-df -h
+#apt-get update -y
+#apt-get install software-properties-common -y
+#add-apt-repository ppa:gluster/glusterfs-7
+#apt-get update -y
+apt-get install -y glusterfs-fuse glusterfs-client attr openssh-server vim wget
